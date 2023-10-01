@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+</head>
+<body>
+    <h1>Todo List</h1>
+
+    <!-- Form to create a new Todo -->
+    <form id="createTodoForm">
+        <label for="todo_name">Name:</label>
+        <input type="text" id="todo_name" name="todo_name" required>
+        <br>
+        <label for="todo_description">Description:</label>
+        <textarea id="todo_description" name="todo_description" required></textarea>
+        <br>
+        <button type="submit">Add Todo</button>
+    </form>
+
+    <!-- Table to display existing Todo items -->
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="todoList">
+            <!-- Todo items will be displayed here -->
+        </tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
